@@ -25,7 +25,7 @@ export default function Home() {
     <Layout
       description="我希望我在意的人每天都能很快乐~>">
         <Head>
-          <title>欢迎来到我的博客~</title>
+          <title>我希望你每天都能快乐~~</title>
         </Head>
       <HomepageHeader />
       <main>
