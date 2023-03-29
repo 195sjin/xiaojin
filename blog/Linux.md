@@ -89,7 +89,7 @@
 
 ## ls---显示指定目录下的内容
 
-![]("https://raw.githubusercontent.com/195sjin/myBed/master/images202303292027315.png)
+![](https://raw.githubusercontent.com/195sjin/myBed/master/images202303292027315.png)
 
 ## touch---创建空文件
 
