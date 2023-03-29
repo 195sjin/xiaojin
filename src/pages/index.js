@@ -21,16 +21,15 @@ function HomepageHeader() {
 }
 
 export default function Home() {
+  const { siteConfig } = useDocusaurusContext();
   return (
     <Layout
-      description="我希望我在意的人每天都能很快乐~>">
-        <Head>
-          <title>我希望你每天都能快乐~~</title>
-        </Head>
+      title={`希望你每天快乐~~`}
+      description="Description will go into a meta tag in <head />"
+    >
       <HomepageHeader />
       <main>
-        <br />
-        {/* <HomepageFeatures /> */}
+        <HomepageFeatures />
       </main>
     </Layout>
   );
