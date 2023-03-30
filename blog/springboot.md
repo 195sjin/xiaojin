@@ -1188,7 +1188,10 @@ http://localhost:8080/actuator/metrics/jvm.gc.pause
 ##### 开启与禁用Endpoints
 
 - 默认所有的Endpoint除过shutdown都是开启的。
-- 需要开启或者禁用某个Endpoint。配置模式为  management.endpoint.<endpointName>.enabled = true
+- 需要开启或者禁用某个Endpoint。配置模式为  
+```
+management.endpoint.<endpointName>.enabled = true
+```
 
 ```
 management:
