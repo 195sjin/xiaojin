@@ -11,7 +11,19 @@ const config = {
   favicon: 'https://raw.githubusercontent.com/195sjin/myBed/master/imagesnull6123db53828f200b.jpg',
   url: 'https://www.xiaojin.space/',
   baseUrl: '/',
-  plugins: ['@docusaurus/theme-live-codeblock'],
+  plugins: [
+    [
+      '@docusaurus/theme-live-codeblock',
+      {
+        id: 'second-blog',
+        blogSidebarTitle: '一些小细节',
+        blogTitle: '记录小细节',
+        routeBasePath: 'essay',
+        path: './essay',
+      },
+    ]
+  ],
+  
   
   
   organizationName: '195sjin', // Usually your GitHub org/user name.
