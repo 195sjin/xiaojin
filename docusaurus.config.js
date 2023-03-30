@@ -77,6 +77,11 @@ const config = {
           },
           {to: '/blog', label: '学习', position: 'left'},
           {
+            to: '/essay',
+            label: '小细节',
+            position: 'left'
+          },
+          {
             href: 'https://github.com/195sjin',
             label: 'GitHub',
             position: 'right',
