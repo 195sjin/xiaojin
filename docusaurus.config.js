@@ -13,7 +13,7 @@ const config = {
   baseUrl: '/',
   plugins: [
     [
-      '@docusaurus/theme-live-codeblock',
+      '@docusaurus/plugin-content-blog',
       {
         id: 'second-blog',
         blogSidebarTitle: '一些小细节',
@@ -46,7 +46,7 @@ const config = {
       ({
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-
+          showLastUpdateAuthor: true,
           editUrl:
             'https://github.com/195sjin/xiaojin/tree/main/',
         },
@@ -87,7 +87,10 @@ const config = {
             position: 'left',
             label: '生活',
           },
-          {to: '/blog', label: '学习', position: 'left'},
+          {
+            to: '/blog', 
+            label: '学习', 
+            position: 'left'},
           {
             to: '/essay',
             label: '小细节',
