@@ -69,6 +69,9 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      algolia: {
+        contextualSearch: true,
+      },
       // Replace with your project's social card
       colorMode: {
         respectPrefersColorScheme: true
