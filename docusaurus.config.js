@@ -60,7 +60,7 @@ const config = {
             'https://github.com/195sjin/xiaojin/tree/main/',
         },
         blog: {
-          blogTitle: '笔记',
+          blogTitle: '随想',
           blogSidebarTitle: '记录一下吧~',
           blogSidebarCount: 'ALL',
           showReadingTime: true,
@@ -99,7 +99,7 @@ const config = {
           },
           {
             to: '/blog', 
-            label: '笔记', 
+            label: '随想', 
             position: 'left'},
           {
             to: '/essay',
