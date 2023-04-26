@@ -1,3 +1,4 @@
+
 # SpringMvc框架
 
 ## 一、SpringMVC简介
@@ -53,14 +54,14 @@ SpringMVC 是 Spring 为表述层开发提供的一整套完备的解决方案�
     <dependency>
         <groupId>ch.qos.logback</groupId>
         <artifactId>logback-classic</artifactId>
-        <version>1.2.3</version>
+        <version>1.2</version>
     </dependency>
 
     <!-- ServletAPI -->
     <dependency>
         <groupId>javax.servlet</groupId>
         <artifactId>javax.servlet-api</artifactId>
-        <version>3.1.0</version>
+        <version>3.1</version>
         <scope>provided</scope>
     </dependency>
 
@@ -68,7 +69,7 @@ SpringMVC 是 Spring 为表述层开发提供的一整套完备的解决方案�
     <dependency>
         <groupId>org.thymeleaf</groupId>
         <artifactId>thymeleaf-spring5</artifactId>
-        <version>3.0.12.RELEASE</version>
+        <version>3.0.RELEASE</version>
     </dependency>
 </dependencies>
 ```
@@ -79,9 +80,9 @@ SpringMVC 是 Spring 为表述层开发提供的一整套完备的解决方案�
 
 使用扩展配置方式
 
-​		由于在maven工程里面，我们把页面一类的放在WEB-INF里面，跟程序有关配置文件放在main下的resources包里面，所以我们把配置文件放在resources里面
+​  由于在maven工程里面，我们把页面一类的放在WEB-INF里面，跟程序有关配置文件放在main下的resources包里面，所以我们把配置文件放在resources里面
 
-​		可通过init-param标签设置SpringMVC配置文件的位置和名称，通过load-on-startup标签设置SpringMVC前端控制器DispatcherServlet的初始化时间
+​  可通过init-param标签设置SpringMVC配置文件的位置和名称，通过load-on-startup标签设置SpringMVC前端控制器DispatcherServlet的初始化时间
 
 ```
 <!-- 配置SpringMVC的前端控制器，对浏览器发送的请求统一进行处理 -->

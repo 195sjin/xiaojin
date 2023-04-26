@@ -11,7 +11,13 @@ const config = {
   favicon: 'https://raw.githubusercontent.com/195sjin/myBed/master/imagesnull6123db53828f200b.jpg',
   url: 'https://www.xiaojin.space/',
   baseUrl: '/',
+  organizationName: '195sjin', // Usually your GitHub org/user name.
+  projectName: 'xiaojin', // Usually your repo name.
+  onBrokenLinks: 'throw',
+  onBrokenMarkdownLinks: 'warn',
+
   plugins: [
+
     [
       '@docusaurus/plugin-content-blog',
       {
@@ -23,21 +29,24 @@ const config = {
       },
     ]
   ],
-  
-  
-  
-  organizationName: '195sjin', // Usually your GitHub org/user name.
-  projectName: 'xiaojin', // Usually your repo name.
 
-  onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
+  themes: [
+    [
+      require.resolve("@easyops-cn/docusaurus-search-local"),
+      ({
+        hashed: true,
+        language: ["en", "zh"],
+      }),
+    ]
+  ],
+  
+ 
 
   i18n: {
     defaultLocale: 'zh-Hans',
     locales: ['zh-Hans'],
   },
 
-  
 
   presets: [
     [
@@ -51,8 +60,8 @@ const config = {
             'https://github.com/195sjin/xiaojin/tree/main/',
         },
         blog: {
-          blogTitle: '博客',
-          blogSidebarTitle: '全部博文',
+          blogTitle: '笔记',
+          blogSidebarTitle: '记录一下吧~',
           blogSidebarCount: 'ALL',
           showReadingTime: true,
    
@@ -86,11 +95,11 @@ const config = {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
             position: 'left',
-            label: '生活',
+            label: '学习',
           },
           {
             to: '/blog', 
-            label: '学习', 
+            label: '笔记', 
             position: 'left'},
           {
             to: '/essay',
@@ -109,6 +118,11 @@ const config = {
         darkTheme: darkCodeTheme,
         defaultLanguage: 'javascript',
       },
+      docs: {
+        sidebar: {
+          hideable: true
+        }
+      }
     }),
     
 };
