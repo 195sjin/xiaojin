@@ -16,6 +16,9 @@ const config = {
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
 
+
+
+
   plugins: [
 
     [
@@ -117,6 +120,7 @@ const config = {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
         defaultLanguage: 'javascript',
+      
       },
       docs: {
         sidebar: {
