@@ -101,6 +101,12 @@ const config = {
             label: '学习',
           },
           {
+            type: 'docSidebar',
+            sidebarId: 'tutorialSidebar',
+            position: 'left',
+            label: 'aa',
+          },
+          {
             to: '/blog', 
             label: '随想', 
             position: 'left'},
